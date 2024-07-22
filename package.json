@@ -60,7 +60,7 @@
     "reset-hard": "git clean -dfx && git reset --hard && npm install",
     "prepare-release": "run-s reset-hard version",
     "update-deps": "npm-check-updates -u",
-    "prepare": "husky"
+    "prepare": "cross-env is-ci || husky install"
   },
   "dependencies": {
     "@langchain/community": "^0.2.18",
