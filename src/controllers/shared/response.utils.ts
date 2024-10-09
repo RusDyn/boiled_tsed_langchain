@@ -1,4 +1,0 @@
-const ResponseUtils = {
-};
-
-export { ResponseUtils };

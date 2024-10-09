@@ -23,8 +23,11 @@ module.exports = {
       }
     ]
   },
-  // Resolve 'paths' from tsconfig.json
-  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>' }),
+  // Remove moduleNameMapper if it's mapping Ts.ED or Prisma paths
+  moduleNameMapper: {
+    // ... existing mappings ...
+    // Remove mappings related to Ts.ED and Prisma
+  },
   // Ignore paths and modules
   modulePathIgnorePatterns: ['<rootDir>/dist'],
 

@@ -1,0 +1,10 @@
+     {
+       "image": "mcr.microsoft.com/devcontainers/javascript-node",
+       "forwardPorts": [5000],
+       "portsAttributes": {
+         "5000": {
+           "label": "API Server",
+           "onAutoForward": "openBrowser"
+         }
+       }
+     }

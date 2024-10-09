@@ -1,6 +1,6 @@
 import { sync as readPackageJsonSync } from 'read-pkg';
 
-import { getEnvironmentNumber, getEnvironmentString } from '@infrastructure/shared/config/environment';
+import { getEnvironmentNumber, getEnvironmentString } from '@/environment';
 
 const AppInfo = Object.freeze({
   APP_VERSION: getEnvironmentString('APP_VERSION', readPackageJsonSync().version),
